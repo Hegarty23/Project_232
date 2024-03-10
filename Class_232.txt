@@ -1,0 +1,7 @@
+select 
+suppliers.contact_name,
+suppliers.company_name,
+suppliers.phone,
+company_products.name from company_products right join suppliers
+on suppliers.id=company_products.supplier_id
+and company_products.is_discontinued=0
